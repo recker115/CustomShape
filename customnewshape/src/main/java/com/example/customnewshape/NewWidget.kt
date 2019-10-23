@@ -9,8 +9,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 /**
  * Created by Santanu ^_^ since October 2019
  */
-class NewWidget(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
-    ConstraintLayout(context, attrs, defStyleAttr) {
+class NewWidget(context: Context?, attrs: AttributeSet?) :
+    ConstraintLayout(context, attrs) {
 
     var mRoot : View = View.inflate(context, R.layout.new_layout, this)
 

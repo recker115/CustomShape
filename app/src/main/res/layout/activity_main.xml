@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/swipe_motion_scene"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.utils.widget.ImageFilterView
+    <!--<androidx.constraintlayout.utils.widget.ImageFilterView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@color/colorAccent"
         app:altSrc="@color/colorPrimaryDark"
-        />
+        />-->
+
+    <com.example.customnewshape.NewWidget
+        android:id="@+id/newWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
