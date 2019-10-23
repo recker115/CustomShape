@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 
 /**
  * Created by Santanu ^_^ since October 2019
@@ -18,13 +19,13 @@ class NewWidget(context: Context?, attrs: AttributeSet?) :
      * Set the new background color
      */
     fun withBackGroundColor(color : Int) {
-        mRoot.setBackgroundColor(color)
+        mRoot.findViewById<View>(R.id.shapebackground).setBackgroundColor(ContextCompat.getColor(context, color))
     }
 
     /**
      * Set new textColor
      */
     fun setNewTextColor(color: Int) {
-        (mRoot.findViewById<View>(R.id.tvNew) as TextView).setTextColor(color)
+        (mRoot.findViewById<View>(R.id.tvNew) as TextView).setTextColor(ContextCompat.getColor(context, color))
     }
 }
