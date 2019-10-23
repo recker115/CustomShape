@@ -28,4 +28,11 @@ class NewWidget(context: Context?, attrs: AttributeSet?) :
     fun setNewTextColor(color: Int) {
         (mRoot.findViewById<View>(R.id.tvNew) as TextView).setTextColor(ContextCompat.getColor(context, color))
     }
+
+    /**
+     * Set text
+     */
+    fun setText(text : String) {
+        (mRoot.findViewById<View>(R.id.tvNew) as TextView).text = text
+    }
 }
